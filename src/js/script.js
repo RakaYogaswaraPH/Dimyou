@@ -1,0 +1,176 @@
+const products = {
+    // Steamed Products
+    steamed1: {
+        name: "Siew Mai",
+        price: "Rp 25,000",
+        description: "Traditional pork and shrimp dumpling steamed to perfection. Made with fresh ingredients and wrapped in delicate wonton skin.",
+        ingredients: "Pork, Shrimp, Wonton Skin, Soy Sauce, Sesame Oil",
+        emoji: "🥟"
+    },
+    steamed2: {
+        name: "Har Gow",
+        price: "Rp 30,000",
+        description: "Crystal shrimp dumpling with translucent skin. A classic Cantonese dim sum featuring fresh shrimp in a delicate wrapper.",
+        ingredients: "Fresh Shrimp, Wheat Starch, Tapioca Starch, Bamboo Shoots",
+        emoji: "🥠"
+    },
+    steamed3: {
+        name: "Xiao Long Bao",
+        price: "Rp 35,000",
+        description: "Soup dumpling with rich pork broth inside. Be careful when eating - the hot soup bursts with flavor!",
+        ingredients: "Pork, Pork Gelatin, Flour, Ginger, Scallions",
+        emoji: "🍜"
+    },
+    steamed4: {
+        name: "Cheung Fun",
+        price: "Rp 28,000",
+        description: "Silky rice noodle rolls filled with tender beef and served with sweet soy sauce.",
+        ingredients: "Rice Flour, Beef, Soy Sauce, Oyster Sauce, Scallions",
+        emoji: "🥢"
+    },
+    steamed5: {
+        name: "Shrimp Har Gow",
+        price: "Rp 32,000",
+        description: "Premium crystal shrimp dumpling with extra large shrimp and perfect translucent wrapper.",
+        ingredients: "Premium Shrimp, Wheat Starch, Tapioca Starch, Water Chestnuts",
+        emoji: "🦐"
+    },
+    steamed6: {
+        name: "Fish Siew Mai",
+        price: "Rp 27,000",
+        description: "Delicate steamed fish dumpling topped with fresh roe, offering a unique seafood experience.",
+        ingredients: "Fresh Fish, Fish Roe, Wonton Skin, Ginger, White Pepper",
+        emoji: "🐟"
+    },
+    steamed7: {
+        name: "Mushroom Bao",
+        price: "Rp 23,000",
+        description: "Fluffy steamed bun filled with savory mushroom mixture, perfect for vegetarians.",
+        ingredients: "Shiitake Mushrooms, Flour, Yeast, Soy Sauce, Sesame Oil",
+        emoji: "🍄"
+    },
+    steamed8: {
+        name: "Veggie Dumpling",
+        price: "Rp 21,000",
+        description: "Healthy steamed dumpling packed with fresh vegetables and tofu for a light meal.",
+        ingredients: "Mixed Vegetables, Tofu, Ginger, Garlic, Soy Sauce",
+        emoji: "🥬"
+    },
+    // Fried Products
+    fried1: {
+        name: "Prawn Toast",
+        price: "Rp 22,000",
+        description: "Crispy deep-fried toast topped with seasoned prawn paste and sesame seeds.",
+        ingredients: "Prawns, Bread, Egg White, Sesame Seeds, Cornstarch",
+        emoji: "🍤"
+    },
+    fried2: {
+        name: "Sesame Ball",
+        price: "Rp 18,000",
+        description: "Golden deep-fried glutinous rice balls filled with sweet red bean paste and coated with sesame seeds.",
+        ingredients: "Glutinous Rice Flour, Red Bean Paste, Sesame Seeds, Sugar",
+        emoji: "🍡"
+    },
+    fried3: {
+        name: "Fried Wonton",
+        price: "Rp 20,000",
+        description: "Crispy golden wontons filled with seasoned pork and vegetables, served with sweet and sour sauce.",
+        ingredients: "Wonton Wrapper, Pork, Vegetables, Garlic, Ginger",
+        emoji: "🥟"
+    },
+    fried4: {
+        name: "Spicy Fried Dumpling",
+        price: "Rp 24,000",
+        description: "Crispy dumplings with a kick of spice, served with our signature spicy dipping sauce.",
+        ingredients: "Dumpling Wrapper, Spiced Pork, Chili Oil, Garlic, Onions",
+        emoji: "🌶️"
+    },
+    fried5: {
+        name: "Pork Spring Roll",
+        price: "Rp 19,000",
+        description: "Traditional crispy spring rolls filled with seasoned pork and fresh vegetables.",
+        ingredients: "Spring Roll Wrapper, Pork, Cabbage, Carrots, Bean Sprouts",
+        emoji: "🐷"
+    },
+    fried6: {
+        name: "Egg Tart",
+        price: "Rp 15,000",
+        description: "Classic Cantonese custard tart with flaky pastry crust and smooth egg custard filling.",
+        ingredients: "Eggs, Milk, Sugar, Butter, Flour, Vanilla",
+        emoji: "🍳"
+    },
+    fried7: {
+        name: "Fried Garlic Dumpling",
+        price: "Rp 26,000",
+        description: "Aromatic fried dumplings infused with garlic flavor and served with soy-based dipping sauce.",
+        ingredients: "Dumpling Wrapper, Pork, Garlic, Ginger, Soy Sauce",
+        emoji: "🧄"
+    },
+    fried8: {
+        name: "Cheese Dumpling",
+        price: "Rp 28,000",
+        description: "Modern fusion dumpling with melted cheese center, crispy exterior, and creamy interior.",
+        ingredients: "Dumpling Wrapper, Cheese, Herbs, Garlic, Black Pepper",
+        emoji: "🧀"
+    }
+};
+
+function openModal(modalId) {
+    const modal = document.getElementById('productModal');
+    const modalContent = document.getElementById('modalContent');
+    const product = products[modalId];
+
+    modalContent.innerHTML = `
+                <div class="text-center">
+                    <div class="text-6xl mb-4">${product.emoji}</div>
+                    <h3 class="text-2xl font-bold mb-2 text-gray-800">${product.name}</h3>
+                    <p class="text-3xl font-bold text-red-700 mb-4">${product.price}</p>
+                    <p class="text-gray-600 mb-4">${product.description}</p>
+                    <div class="bg-gray-50 p-4 rounded-lg mb-6">
+                        <h4 class="font-semibold text-gray-800 mb-2">Ingredients:</h4>
+                        <p class="text-sm text-gray-600">${product.ingredients}</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <button class="flex-1 bg-red-700 text-white px-6 py-3 rounded-full font-semibold hover:bg-red-800 hover-smooth">
+                            Add to Cart
+                        </button>
+                        <button onclick="closeModal()" class="flex-1 border-2 border-red-700 text-red-700 px-6 py-3 rounded-full font-semibold hover:bg-red-700 hover:text-white hover-smooth">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            `;
+
+    modal.classList.add('show');
+}
+
+function closeModal() {
+    const modal = document.getElementById('productModal');
+    modal.classList.remove('show');
+}
+
+// Close modal when clicking outside
+document.getElementById('productModal').addEventListener('click', function (e) {
+    if (e.target === this) {
+        closeModal();
+    }
+});
+
+// Scroll animations
+function animateOnScroll() {
+    const elements = document.querySelectorAll('.section-fade-in');
+    elements.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        const elementVisible = 150;
+
+        if (elementTop < window.innerHeight - elementVisible) {
+            element.classList.add('visible');
+        }
+    });
+}
+
+// Initialize animations
+window.addEventListener('scroll', animateOnScroll);
+document.addEventListener('DOMContentLoaded', animateOnScroll);
+
+document.getElementById("year").textContent = new Date().getFullYear();
