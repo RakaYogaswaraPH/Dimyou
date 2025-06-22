@@ -7,42 +7,56 @@
     <title>DIMYOU - Delicious Dimsum</title>
     <link rel="stylesheet" href="./src/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="./src/img/logo.png" />
 </head>
 
 <body class="bg-red-700 text-white" id="hero">
-    <!-- Sticky Navbar -->
+    <!-- Navbar -->
     <nav class="sticky top-0 z-50 bg-red-700 bg-opacity-95 backdrop-blur-md">
-        <div class="flex items-center justify-between px-6 py-6 lg:px-12">
-            <div class="flex items-center space-x-12">
+        <div class="flex items-center justify-between px-6 py-4 lg:px-12">
+            <div class="flex items-center space-x-4 lg:space-x-12">
                 <div
-                    class="font-bold text-lg border-b-2 border-white pb-1 transition-all duration-300 hover:scale-105 cursor-pointer">
-                    Home
-                </div>
-                <div class="font-medium transition-all duration-300 hover:font-bold hover:scale-105 cursor-pointer">
-                    Menu
-                </div>
-                <div class="font-medium transition-all duration-300 hover:font-bold hover:scale-105 cursor-pointer">
-                    All You Can Eat
-                </div>
+                    class="font-bold text-lg border-b-2 border-white pb-1 transition-transform duration-300 hover:scale-105 cursor-pointer">
+                    Home</div>
+                <div
+                    class="hidden lg:block font-medium transition-transform duration-300 hover:scale-105 cursor-pointer">
+                    Menu</div>
+                <div
+                    class="hidden lg:block font-medium transition-transform duration-300 hover:scale-105 cursor-pointer">
+                    All You Can Eat</div>
             </div>
 
-            <div class="transition-all duration-300 hover:scale-105">
-                <img src="./src/img/logo.png" alt="Logo" class="h-20 w-20 rounded-full bg-white object-cover" />
+            <img src="./src/img/logo.png" alt="Logo"
+                class="h-12 w-12 md:h-20 md:w-20 rounded-full bg-white object-cover transition-transform duration-300 hover:scale-105" />
+
+            <div class="hidden lg:flex items-center space-x-4 lg:space-x-12">
+                <div class="font-medium transition-transform duration-300 hover:scale-105 cursor-pointer">Franchise
+                </div>
+                <div class="font-medium transition-transform duration-300 hover:scale-105 cursor-pointer">Reseller</div>
+                <div class="font-medium transition-transform duration-300 hover:scale-105 cursor-pointer">Profile</div>
             </div>
 
-            <div class="flex items-center space-x-12">
-                <div class="font-medium transition-all duration-300 hover:font-bold hover:scale-105 cursor-pointer">
-                    Franchise
-                </div>
-                <div class="font-medium transition-all duration-300 hover:font-bold hover:scale-105 cursor-pointer">
-                    Reseller
-                </div>
-                <div class="font-medium transition-all duration-300 hover:font-bold hover:scale-105 cursor-pointer">
-                    Profile
-                </div>
-            </div>
+            <!-- Hamburger -->
+            <button id="menu-toggle" class="lg:hidden text-white text-3xl focus:outline-none">☰</button>
+        </div>
+
+        <div id="mobile-menu"
+            class="lg:hidden overflow-hidden max-h-0 opacity-0 translate-y-[-10px] transition-all duration-500 ease-in-out flex flex-col px-6 space-y-2">
+            <div class="font-medium cursor-pointer">Menu</div>
+            <div class="font-medium cursor-pointer">All You Can Eat</div>
+            <div class="font-medium cursor-pointer">Franchise</div>
+            <div class="font-medium cursor-pointer">Reseller</div>
+            <div class="font-medium cursor-pointer">Profile</div>
         </div>
     </nav>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop"
+        class="fixed bottom-6 right-6 bg-white text-red-700 text-xl p-3 rounded-full shadow-lg hover:bg-red-100 transition-opacity duration-300 opacity-0 z-50">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
 
     <!-- Hero Section -->
     <main class="min-h-[calc(100vh-96px)] flex items-center justify-center px-6 lg:px-12 relative z-10">
@@ -102,7 +116,7 @@
                         </div>
                         <div class="p-6">
                             <h4 class="text-xl font-bold mb-2">Siew Mai</h4>
-                            <p class="text-gray-600 mb-4">Traditional pork and shrimp dumpling</p>
+                            <p class="text-gray-600 mb-4">Traditional Chicken and shrimp dumpling</p>
                             <div class="flex justify-between items-center">
                                 <span class="text-2xl font-bold text-red-700">Rp 25,000</span>
                                 <button
@@ -146,7 +160,7 @@
                         </div>
                         <div class="p-6">
                             <h4 class="text-xl font-bold mb-2">Xiao Long Bao</h4>
-                            <p class="text-gray-600 mb-4">Soup dumpling with pork filling</p>
+                            <p class="text-gray-600 mb-4">Soup dumpling with Chicken filling</p>
                             <div class="flex justify-between items-center">
                                 <span class="text-2xl font-bold text-red-700">Rp 35,000</span>
                                 <button
@@ -360,8 +374,8 @@
                             </div>
                         </div>
                         <div class="p-6">
-                            <h4 class="text-xl font-bold mb-2">Pork Spring Roll</h4>
-                            <p class="text-gray-600 mb-4">Crispy pork spring roll</p>
+                            <h4 class="text-xl font-bold mb-2">Chicken Spring Roll</h4>
+                            <p class="text-gray-600 mb-4">Crispy Chicken spring roll</p>
                             <div class="flex justify-between items-center">
                                 <span class="text-2xl font-bold text-red-700">Rp 19,000</span>
                                 <button

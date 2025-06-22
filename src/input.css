@@ -6,6 +6,7 @@
 
 .modal {
   transition: all 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent, still see background */
 }
 
 .modal.show {

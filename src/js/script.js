@@ -3,8 +3,8 @@ const products = {
     steamed1: {
         name: "Siew Mai",
         price: "Rp 25,000",
-        description: "Traditional pork and shrimp dumpling steamed to perfection. Made with fresh ingredients and wrapped in delicate wonton skin.",
-        ingredients: "Pork, Shrimp, Wonton Skin, Soy Sauce, Sesame Oil",
+        description: "Traditional Chicken and shrimp dumpling steamed to perfection. Made with fresh ingredients and wrapped in delicate wonton skin.",
+        ingredients: "Chicken, Shrimp, Wonton Skin, Soy Sauce, Sesame Oil",
         emoji: "🥟"
     },
     steamed2: {
@@ -17,8 +17,8 @@ const products = {
     steamed3: {
         name: "Xiao Long Bao",
         price: "Rp 35,000",
-        description: "Soup dumpling with rich pork broth inside. Be careful when eating - the hot soup bursts with flavor!",
-        ingredients: "Pork, Pork Gelatin, Flour, Ginger, Scallions",
+        description: "Soup dumpling with rich Chicken broth inside. Be careful when eating - the hot soup bursts with flavor!",
+        ingredients: "Chicken, Chicken Gelatin, Flour, Ginger, Scallions",
         emoji: "🍜"
     },
     steamed4: {
@@ -74,22 +74,22 @@ const products = {
     fried3: {
         name: "Fried Wonton",
         price: "Rp 20,000",
-        description: "Crispy golden wontons filled with seasoned pork and vegetables, served with sweet and sour sauce.",
-        ingredients: "Wonton Wrapper, Pork, Vegetables, Garlic, Ginger",
+        description: "Crispy golden wontons filled with seasoned Chicken and vegetables, served with sweet and sour sauce.",
+        ingredients: "Wonton Wrapper, Chicken, Vegetables, Garlic, Ginger",
         emoji: "🥟"
     },
     fried4: {
         name: "Spicy Fried Dumpling",
         price: "Rp 24,000",
         description: "Crispy dumplings with a kick of spice, served with our signature spicy dipping sauce.",
-        ingredients: "Dumpling Wrapper, Spiced Pork, Chili Oil, Garlic, Onions",
+        ingredients: "Dumpling Wrapper, Spiced Chicken, Chili Oil, Garlic, Onions",
         emoji: "🌶️"
     },
     fried5: {
-        name: "Pork Spring Roll",
+        name: "Chicken Spring Roll",
         price: "Rp 19,000",
-        description: "Traditional crispy spring rolls filled with seasoned pork and fresh vegetables.",
-        ingredients: "Spring Roll Wrapper, Pork, Cabbage, Carrots, Bean Sprouts",
+        description: "Traditional crispy spring rolls filled with seasoned Chicken and fresh vegetables.",
+        ingredients: "Spring Roll Wrapper, Chicken, Cabbage, Carrots, Bean Sprouts",
         emoji: "🐷"
     },
     fried6: {
@@ -103,7 +103,7 @@ const products = {
         name: "Fried Garlic Dumpling",
         price: "Rp 26,000",
         description: "Aromatic fried dumplings infused with garlic flavor and served with soy-based dipping sauce.",
-        ingredients: "Dumpling Wrapper, Pork, Garlic, Ginger, Soy Sauce",
+        ingredients: "Dumpling Wrapper, Chicken, Garlic, Ginger, Soy Sauce",
         emoji: "🧄"
     },
     fried8: {
@@ -174,3 +174,41 @@ window.addEventListener('scroll', animateOnScroll);
 document.addEventListener('DOMContentLoaded', animateOnScroll);
 
 document.getElementById("year").textContent = new Date().getFullYear();
+
+const menu = document.getElementById('mobile-menu');
+const toggle = document.getElementById('menu-toggle');
+
+toggle.addEventListener('click', () => {
+    menu.classList.toggle('max-h-0');
+    menu.classList.toggle('opacity-0');
+    menu.classList.toggle('translate-y-[-10px]');
+
+    menu.classList.toggle('max-h-[500px]');
+    menu.classList.toggle('opacity-100');
+    menu.classList.toggle('translate-y-0');
+});
+
+
+
+const backToTop = document.getElementById('backToTop');
+
+toggle.addEventListener('click', () => {
+    menu.classList.toggle('open');
+});
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        backToTop.classList.remove('opacity-0');
+        backToTop.classList.add('opacity-100');
+    } else {
+        backToTop.classList.add('opacity-0');
+        backToTop.classList.remove('opacity-100');
+    }
+});
+
+backToTop.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
