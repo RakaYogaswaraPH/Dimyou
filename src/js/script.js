@@ -5,56 +5,56 @@ const products = {
         price: "Rp 25,000",
         description: "Traditional Chicken and shrimp dumpling steamed to perfection. Made with fresh ingredients and wrapped in delicate wonton skin.",
         ingredients: "Chicken, Shrimp, Wonton Skin, Soy Sauce, Sesame Oil",
-        image: "./src/img/menus1.webp"
+        image: "./src/img/menus9.webp"
     },
     steamed2: {
         name: "Har Gow",
         price: "Rp 30,000",
         description: "Crystal shrimp dumpling with translucent skin. A classic Cantonese dim sum featuring fresh shrimp in a delicate wrapper.",
         ingredients: "Fresh Shrimp, Wheat Starch, Tapioca Starch, Bamboo Shoots",
-        image: "./src/img/menus2.webp"
+        image: "./src/img/menus10.webp"
     },
     steamed3: {
         name: "Xiao Long Bao",
         price: "Rp 35,000",
         description: "Soup dumpling with rich Chicken broth inside. Be careful when eating - the hot soup bursts with flavor!",
         ingredients: "Chicken, Chicken Gelatin, Flour, Ginger, Scallions",
-        image: "./src/img/menus3.webp"
+        image: "./src/img/menus11.webp"
     },
     steamed4: {
         name: "Cheung Fun",
         price: "Rp 28,000",
         description: "Silky rice noodle rolls filled with tender beef and served with sweet soy sauce.",
         ingredients: "Rice Flour, Beef, Soy Sauce, Oyster Sauce, Scallions",
-        image: "./src/img/menus4.webp"
+        image: "./src/img/menus12.webp"
     },
     steamed5: {
         name: "Shrimp Har Gow",
         price: "Rp 32,000",
         description: "Premium crystal shrimp dumpling with extra large shrimp and perfect translucent wrapper.",
         ingredients: "Premium Shrimp, Wheat Starch, Tapioca Starch, Water Chestnuts",
-        image: "./src/img/menus5.webp"
+        image: "./src/img/menus13.webp"
     },
     steamed6: {
         name: "Fish Siew Mai",
         price: "Rp 27,000",
         description: "Delicate steamed fish dumpling topped with fresh roe, offering a unique seafood experience.",
         ingredients: "Fresh Fish, Fish Roe, Wonton Skin, Ginger, White Pepper",
-        image: "./src/img/menus6.webp"
+        image: "./src/img/menus14.webp"
     },
     steamed7: {
         name: "Mushroom Bao",
         price: "Rp 23,000",
         description: "Fluffy steamed bun filled with savory mushroom mixture, perfect for vegetarians.",
         ingredients: "Shiitake Mushrooms, Flour, Yeast, Soy Sauce, Sesame Oil",
-        image: "./src/img/menus7.webp"
+        image: "./src/img/menus15.webp"
     },
     steamed8: {
         name: "Veggie Dumpling",
         price: "Rp 21,000",
         description: "Healthy steamed dumpling packed with fresh vegetables and tofu for a light meal.",
         ingredients: "Mixed Vegetables, Tofu, Ginger, Garlic, Soy Sauce",
-        image: "./src/img/menus8.webp"
+        image: "./src/img/menus16.webp"
     },
     // Fried Products
     fried1: {
@@ -62,56 +62,56 @@ const products = {
         price: "Rp 22,000",
         description: "Crispy deep-fried toast topped with seasoned prawn paste and sesame seeds.",
         ingredients: "Prawns, Bread, Egg White, Sesame Seeds, Cornstarch",
-        image: "./src/img/menus9.webp"
+        image: "./src/img/menus1.webp"
     },
     fried2: {
         name: "Sesame Ball",
         price: "Rp 18,000",
         description: "Golden deep-fried glutinous rice balls filled with sweet red bean paste and coated with sesame seeds.",
         ingredients: "Glutinous Rice Flour, Red Bean Paste, Sesame Seeds, Sugar",
-        image: "./src/img/menus10.webp"
+        image: "./src/img/menus2.webp"
     },
     fried3: {
         name: "Fried Wonton",
         price: "Rp 20,000",
         description: "Crispy golden wontons filled with seasoned Chicken and vegetables, served with sweet and sour sauce.",
         ingredients: "Wonton Wrapper, Chicken, Vegetables, Garlic, Ginger",
-        image: "./src/img/menus11.webp"
+        image: "./src/img/menus3.webp"
     },
     fried4: {
         name: "Spicy Fried Dumpling",
         price: "Rp 24,000",
         description: "Crispy dumplings with a kick of spice, served with our signature spicy dipping sauce.",
         ingredients: "Dumpling Wrapper, Spiced Chicken, Chili Oil, Garlic, Onions",
-        image: "./src/img/menus12.webp"
+        image: "./src/img/menus4.webp"
     },
     fried5: {
         name: "Chicken Spring Roll",
         price: "Rp 19,000",
         description: "Traditional crispy spring rolls filled with seasoned Chicken and fresh vegetables.",
         ingredients: "Spring Roll Wrapper, Chicken, Cabbage, Carrots, Bean Sprouts",
-        image: "./src/img/menus13.webp"
+        image: "./src/img/menus5.webp"
     },
     fried6: {
         name: "Egg Tart",
         price: "Rp 15,000",
         description: "Classic Cantonese custard tart with flaky pastry crust and smooth egg custard filling.",
         ingredients: "Eggs, Milk, Sugar, Butter, Flour, Vanilla",
-        image: "./src/img/menus14.webp"
+        image: "./src/img/menus6.webp"
     },
     fried7: {
         name: "Fried Garlic Dumpling",
         price: "Rp 26,000",
         description: "Aromatic fried dumplings infused with garlic flavor and served with soy-based dipping sauce.",
         ingredients: "Dumpling Wrapper, Chicken, Garlic, Ginger, Soy Sauce",
-        image: "./src/img/menus15.webp"
+        image: "./src/img/menus7.webp"
     },
     fried8: {
         name: "Cheese Dumpling",
         price: "Rp 28,000",
         description: "Modern fusion dumpling with melted cheese center, crispy exterior, and creamy interior.",
         ingredients: "Dumpling Wrapper, Cheese, Herbs, Garlic, Black Pepper",
-        image: "./src/img/menus16.webp"
+        image: "./src/img/menus8.webp"
     }
 };
 
